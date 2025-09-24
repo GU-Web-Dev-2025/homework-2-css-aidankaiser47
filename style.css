@@ -1,20 +1,66 @@
+/* Attempted SFX EC baby */
+
+ /* 
+ Name: Aidan Kaiser
+ Class: CPSC 332
+ Assignment: HW2
+ Date Last Modified: 9/23/2025
+ */
+
+
+
 :root {
     --gold: goldenrod;
     --blue: rgb(118, 188, 211);
     --claret: rgb(129, 19, 49);
+    --darkblue: rgb(62, 116, 136);
+    --lightblue: rgb(229, 238, 241);
 }
 
-
+/* Styling for whole elements */
 body {
     background-color: rgb(118, 188, 211);
+    font-family: arial;
 }
 
-.Navigation {
+h1 {
+    color: var(--claret);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 { /* EXTRA CREDIT special effect */
+    font-family: arial;
+    font-size: 50px;
+    text-shadow: 2px 2px 3px white;
+    color: var(--claret);
+}
+
+h3 { /* EXTRA CREDIT special effect */
+    font-family: arial;
+    font-size: 20px;
+    text-shadow: 2px 2px 3px white;
+    color: var(--claret);
+}
+
+caption {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--claret);
+}
+
+/* Nav bar */
+@keyframes changeColors { /* EXTRA CREDIT special effect */
+  0%   { background-color:var(--gold); }
+  50%  { background-color: var(--claret); }
+  100% { background-color: var(--gold); }
+}
+.Navigation { 
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     background-color: goldenrod;
     font-family: cursive;
+    animation: changeColors 4s ease 1s infinite;
 }
 
 .nav_row {
@@ -22,39 +68,73 @@ body {
     gap: 50px;
 }
 
+.nav_link {
+    color: white;
+}
+
+.navbar_img {
+    border: 2px solid var(--claret);
+}
+
+/* Everything below nav bar */
 .content {
     display: flex;
     gap: 30px;
 
 }
 
-h1 {
-    color: var(--claret);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-h2 {
-    font-family: arial;
-    font-size: 30px;
-    text-shadow: 2px 2px 3px white;
-    color: var(--claret);
-}
+
+/* Introduction section / left side */
 .intro_p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 10px solid rgb(229, 238, 241) ;
+    border: 10px solid var(--lightblue);
 }
 .Introduction_div {
     flex: 0 1 30%;
 }
 
+/* Content section / right side */
 .Main_content {
     flex: 0 1 70%;
 }
 
 
+/* Image styling */
+.profile_img {
+    width: 250px;
+    border: 1px solid var(--claret)
+}
 
+img { /* EXTRA CREDIT special effect */
+    border-radius: 5px;
+}
+.linked_img:hover { /* EXTRA CREDIT special effect */
+    border: 5px solid var(--claret);
+    box-shadow: 5px 5px 5px black;
+}
 
+/* Skills list modifications */
 .skills_list {
     list-style: georgian;
 }
 
 
+/* Table styling */
+tr:nth-child(even) {
+    background-color: var(--lightblue);
+}
+
+tr:nth-child(odd) {
+    color: var(--lightblue);
+    background-color: var(--darkblue);
+}
+
+tr:hover {
+    background-color: var(--claret);
+    color: white;
+}
+
+th {
+    font-size: 18px;
+    color: white;
+}

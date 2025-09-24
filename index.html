@@ -10,42 +10,38 @@
 <!-- 
  Name: Aidan Kaiser
  Class: CPSC 332
- Assignment: HW1
- Date Last Modified: 9/7/2025
+ Assignment: HW2
+ Date Last Modified: 9/23/2025
 -->
 <body>
-    <div class="Navigation">
-        <table>
-            <tr class="nav_row">
-                <td><img src="./photos/west_ham_old_logo.png" width="50"></td>
-                <td><a href="index.html#Intro">Introduction</a></td>
-                <td><a href="index.html#Career">Career Summary</a></td>
-                <td><a href="index.html#Education_and_Qualifs">Education and Qualifications</a></td>
-                <td><a href="index.html#Hobbies">Hobbies and Interests</a></td>
-                <td><a href="index.html#skills">Skills</a></td>
-            </tr>
-        </table>
-    </div>
+    
+    <nav class="Navigation">
+        <div class="nav_row">
+            <p><img class="navbar_img" src="./photos/west_ham_old_logo.png" alt="Navbar_image" width="50"></p>
+            <p><a class="nav_link" href="index.html#Intro">Introduction</a></p>
+            <p><a class="nav_link" href="index.html#Career">Career Summary</a></p>
+            <p><a class="nav_link" href="index.html#Education_and_Qualifs">Education and Qualifications</a></p>
+            <p><a class="nav_link" href="index.html#Hobbies">Hobbies and Interests</a></p>
+            <p><a class="nav_link" href="index.html#skills">Skills</a></p>
+        </div>
+    </nav>
 
     <div class="content">
-    <div class="Introduction_div">
-        <h1 id="Intro">Introduction</h1>
-        <h2>Aidan Kaiser</h2>
-        <img src="./photos/profile_pic.jpg" alt="personal_photo" width="250">
-        <P class="intro_p">
-            I am a fourth year at Gonzaga University studying Computer Science. 
-            I am interested in Data Science and machine learning as well as web development. I am eager to continue
-            to learn new strategies and techniques while working on projects with small or large teams. Outside of school,
-        I enjoy exploring the country by hiking, kayaking or driving. Any day where I can get out of the house is a good day! 
-        </P>
-        
-        
-
-    </div>
+        <section class="Introduction_div">
+            <h2>Aidan Kaiser</h2>
+            <h3>Computer Scientist</h3>
+            <img class="profile_img" src="./photos/profile_pic.jpg" alt="personal_photo">
+            <p class="intro_p">
+                I am a fourth year at Gonzaga University studying Computer Science. 
+                I am interested in Data Science and machine learning as well as web development. I am eager to continue
+                to learn new strategies and techniques while working on projects with small or large teams. Outside of school,
+            I enjoy exploring the country by hiking, kayaking or driving. Any day where I can get out of the house is a good day! 
+            </p>
+        </section>
     
 
     <div class="Main_content">
-        <div class="Career_div">
+        <section class="Career_div">
             <h1 id="Career">Career Summary</h1>
             <table id="Work_Experience">
                 <caption> Work Experience and Projects</caption>
@@ -55,17 +51,17 @@
                     <th> Description</th>
                 </tr>
                 <tr>
-                    <td>Flume Water Customer Support Internship</td>
-                    <td>May 2024 - January 2025</td>
-                    <td>Worked at a local water tech company that focuses on preserving water and discovering pipe leaks by using machine learning. 
-                        Troubleshooted customer's devices to achieve peak performance while overcoming obstacles unique to the customer's environment. 
-                    </td>
-                </tr>
-                <tr>
                     <td>British Baking Show Data Set Analysis</td>
                     <td>October 2024-December 2024</td>
                     <td>Worked with a classmate to predict if a contestant had won a 'Star Baker' based on their 'technical' placements using original classifiers.
                         Created original kNN, decision tree, and random forest classifiers to understand the foundations of classifiers better.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flume Water Customer Support Internship</td>
+                    <td>May 2024 - January 2025</td>
+                    <td>Worked at a local water tech company that focuses on preserving water and discovering pipe leaks by using machine learning. 
+                        Troubleshooted customer's devices to achieve peak performance while overcoming obstacles unique to the customer's environment. 
                     </td>
                 </tr>
                 <tr>
@@ -82,9 +78,9 @@
                     </td>
                 </tr>
             </table>
-        </div>
+        </section>
 
-        <div class="Education and Qualifications">
+        <section class="Education and Qualifications">
             <h1 id="Education_and_Qualifs">Education and Qualifications</h1>
             <table id="Education">
                 <caption> Education</caption>
@@ -104,40 +100,40 @@
                     <td>Studying computer science as well as taking data science masters courses. Crushing it, doing extracurriculars.</td>
                 </tr>
             </table>
-        </div>
         <br>
 
-        <table id="Qualifications">
-            <caption>Qualifications</caption>
-            <tr>
-                <th>Project</th>
-                <th>Date</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Baking Show Analysis</td>
-                <td>December 2024</td>
-                <td>Worked with a small team to perform data analysis on a large public dataset. 
-                    Used self-made classifiers to analyze and make predictions for the winner of a baking show.
-                </td>
-            </tr>
-            <tr>
-                <td>Flume Water Internship</td>
-                <td>April 2024 - Fedruary 2025</td>
-                <td>Worked with customers online to aid them in the installation and functionality of their water sensors.
-                    Worked with head data engineer and discussed new approaches and techniques for improving the product.
-                </td>
-            </tr>
+            <table id="Qualifications">
+                <caption>Qualifications</caption>
+                <tr>
+                    <th>Project</th>
+                    <th>Date</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Baking Show Analysis</td>
+                    <td>December 2024</td>
+                    <td>Worked with a small team to perform data analysis on a large public dataset. 
+                        Used self-made classifiers to analyze and make predictions for the winner of a baking show.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flume Water Internship</td>
+                    <td>April 2024 - Fedruary 2025</td>
+                    <td>Worked with customers online to aid them in the installation and functionality of their water sensors.
+                        Worked with head data engineer and discussed new approaches and techniques for improving the product.
+                    </td>
+                </tr>
 
-        </table>
+            </table>
+        </section>
 
 
 
-
-        <div class="Hobbies_div">
+        <section class="Hobbies_div">
             <h1 id="Hobbies">Interests and Hobbies</h1>
             <ol>
-                <li>Music<br><a href="https://open.spotify.com/artist/3VLf4DlBTN2ZRwygS3TNti" target="_blank"> <img src="./photos/the_academic.jpg" alt="The Academic Band Photo" width="200"></a>
+                <li>Music<br><a href="https://open.spotify.com/artist/3VLf4DlBTN2ZRwygS3TNti" target="_blank"> 
+                    <img class="linked_img" src="./photos/the_academic.jpg" alt="The Academic Band Photo" width="200"></a>
                 </li>
                 <li>Movies<br><img src="./photos/indiana_jones.jpg" alt="Indian Jones Movie Poster" width="200"></li>
                     
@@ -146,17 +142,17 @@
                 <li>Formula 1<br><img src="./photos/lewis_hamilton.jpg" alt="Lewis Hamilton Helmet" width="200"></li>
             
             </ol>
-        </div>
+        </section>
 
-        <div class="Skills_div">
-        <h1 id="skills">Skills</h1>
-        <ul class="skills_list">
-            <li>Machine Learning</li>
-            <li>Data Science</li>
-            <li>Team Management</li>
-            <li>Smiles</li>
-        </ul>
-        </div>
+        <section class="Skills_div">
+            <h1 id="skills">Skills</h1>
+            <ul class="skills_list">
+                <li>Machine Learning</li>
+                <li>Data Science</li>
+                <li>Team Management</li>
+                <li>Smiles</li>
+            </ul>
+        </section>
 
     </div>
     </div>
